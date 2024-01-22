@@ -1,0 +1,74 @@
+@import "@/styles/globals.scss";
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(45deg, $framer-blue 10%, $framer-blue-light 90%);
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 500vh;
+}
+
+.launchSection {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  gap: 2rem;
+
+  &__leftSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 1rem;
+
+    .title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: $neutral-white;
+    }
+
+    .description {
+      font-size: 1rem;
+      font-weight: 400;
+      color: $neutral-white;
+    }
+  }
+
+  &__rightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+
+    .imageBox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 30rem;
+      height: 30rem;
+
+      border-radius: 50%;
+      background: $neutral-white;
+    }
+  }
+}
